@@ -57,5 +57,3 @@ A big thank you to the React community, Open Source contributors, and all the st
 **Happy Learning!** ✨
 
 ---
-
-_Made with ☕️ by HiteshChoudhary_
