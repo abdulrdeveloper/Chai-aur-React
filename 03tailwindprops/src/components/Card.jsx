@@ -1,27 +1,85 @@
-import React from 'react'
+import React from "react";
+import Container from "../reusableFunction.jsx";
 
-function Card({username, btnText="visit me"}) {
-    console.log(username);
+// it is a reusable card component which we can use anywhere in our app and we can pass different props to it to get different content in the card.
+
+// function Card() {
+//   return (
+//     <>
+//       <div className="flex flex-wrap gap-6 justify-center p-8">
+//         <Container
+//           title="The Cats"
+//           description="Cats are small, carnivorous mammals that are often kept as pets."
+//           image={
+//             <img
+//               src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131"
+//               alt="The Cats"
+//               className="z-0 h-full w-full rounded-md object-cover"
+//             />
+//           }
+//         />
+
+//         <Container
+//           title="The Birds"
+//           description="Birds are a group of warm-blooded vertebrates characterized by the presence of feathers."
+//           image={
+//             <img
+//               src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+//               alt="The Birds"
+//               className="z-0 h-full w-full rounded-md object-cover"
+//             />
+//           }
+//         />
+
+//         <Container
+//           title="The Fishes"
+//           description="Fishes are a group of aquatic animals that have gills and fins."
+//           image={
+//             <img
+//               src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+//               alt="The Fishes"
+//               className="z-0 h-full w-full rounded-md object-cover"
+//             />
+//           }
+//         />
+//       </div>
+//     </>
+//   );
+// }
+
+// export default Card;
+
+
+function Card() {
+
+const animals = [
+  { id: 1, title: "The Cats", description: "Cats are small, carnivorous mammals that are often kept as pets.", src: "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=400&q=80" },
+  { id: 2, title: "The Birds", description: "Birds are warm-blooded vertebrates characterized by the presence of feathers.", src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" },
+  { id: 3, title: "The Fishes", description: "Fishes are aquatic animals that breathe through gills and use fins to swim.", src: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80" },
+];
+
   return (
-    <div className="relative h-[400px] w-[300px] rounded-md ">
-  <img
-    src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVzZXJ8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
-    alt="AirMax Pro"
-    className="z-0 h-full w-full rounded-md object-cover"
-  />
-  <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
-  <div className="absolute bottom-4 left-4 text-left">
-    <h1 className="text-lg font-semibold text-white">{username}</h1>
-    <p className="mt-2 text-sm text-gray-300">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
-      debitis?
-    </p>
-    <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
-      {btnText } →
-    </button>
-  </div>
-</div>
-  )
+   <>
+   <div className="flex flex-col items-center justify-center p-8 w-full max-w-7xl mx-auto">
+      <div className="flex flex-wrap gap-6 justify-center items-stretch w-full">
+        {animals.map((animal) => (
+          <Container
+            key={animal.id}
+            title={animal.title}
+            description={animal.description}
+            image={
+              <img
+                src={animal.src}
+                alt={animal.title}
+                className="w-full h-50 object-cover"
+              />
+            }
+          />
+        ))}
+      </div>
+    </div>
+    </>
+  );
 }
 
-export default Card
+export default Card;

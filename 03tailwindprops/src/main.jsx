@@ -1,10 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
+import Card from './components/Card.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <>
+    <div className='w-full'>
+      <h1 className='text-4xl font-bold text-center text-green-500 py-3 mt-4 tracking-wide uppercase'>Tailwind Test</h1>
+    </div>
+  <Card />
+  </>
 )
