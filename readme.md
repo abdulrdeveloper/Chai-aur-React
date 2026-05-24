@@ -48,7 +48,7 @@ Contributions are always welcomed. Feel free to raise issues or send in pull req
 
 Don't forget to subscribe to ["chai aur code"](https://www.youtube.com/channel/UCNQ6FEtztATuaVhZKCY28Yw) on YouTube for the entire video series and much more!
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 A big thank you to the React community, Open Source contributors, and all the students and professionals who've provided their feedback and support to make this series better!
 
@@ -57,3 +57,13 @@ A big thank you to the React community, Open Source contributors, and all the st
 **Happy Learning!** ✨
 
 ---
+
+---
+<div align="center">
+  <sub>
+    You can find more of my work at <a href="https://abdulrdeveloper.me">abdulrdeveloper.me</a> &nbsp;·&nbsp; 
+    Read more posts at <a href="https://blog.abdulrdeveloper.me">blog.abdulrdeveloper.me</a> &nbsp;·&nbsp; 
+    See more projects on <a href="https://github.com/abdulrdeveloper">GitHub</a>
+  </sub>
+</div>
+<br/>
